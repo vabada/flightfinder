@@ -1,0 +1,28 @@
+{
+  "name": "flightfinder",
+  "version": "0.0.1",
+  "description": "Cheap flight finder across Europe",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abadabanades/flightfinder.git"
+  },
+  "author": "abadabanades",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abadabanades/flightfinder/issues"
+  },
+  "homepage": "http://frflightfinder.herokuapp.com/",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
