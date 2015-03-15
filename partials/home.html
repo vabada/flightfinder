@@ -1,0 +1,37 @@
+<!--<div class='container-fluid' >
+    
+    <p class="input-group" >
+        <input type="text" class="form-control"/>
+        <span class="input-group-btn">
+        <button type="button" class="btn btn-default" ng-click="printAllAirports()"><i class="glyphicon glyphicon-search"></i></button>
+        </span>
+    </p>
+</div>-->
+
+<div class="col-xs-12 col-md-6" id="title">
+    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+    <h1>Route Map</h1>
+</div>
+<!--
+<div class="col-xs-2 col-md-2" id="searchtext">
+    <h4>Search:</h4>
+</div>-->
+
+<div class="col-xs-12 col-md-6" id="searchbox">
+    <input type="text" placeholder="Search a city..." ng-change="selectAirport()" ng-keyup="$event.keyCode == 13 && selectAirport()" class="form-control" ng-model="selected" typeahead="airport.name for airport in arrays.airports.airports | filter: $viewValue | limitTo:9" class="form-control">
+</div>
+
+<div id="map" "col-xs-12 col-md-12">
+    <map        
+      zoom="4" 
+      center="[50.74, 10.18]" 
+      dragging-cursor="move"
+      keyboard-shortcuts="false"
+      max-zoom="15"
+      min-zoom="3"
+      tilt="90"
+      map-type-id="SATELLITE">
+      <marker ng-repeat="myMarker in markers" position="[{{myMarker.latitude}},{{myMarker.longitude}}]" ></marker>
+      <shape id="polyline" name="polyline" ng-repeat="line in lines" path="{{line.path}}" ></shape>
+    </map>
+</div>

@@ -1,0 +1,14 @@
+A running version may be found here:
+http://fr-routemap.herokuapp.com/
+
+To run locally, you must have npm and the heroku toolbelt installed.
+
+Run:
+npm install
+to install all required packages
+
+Run:
+foreman start
+to start the local server
+
+Open localhost:5000 in a browser and enjoy
